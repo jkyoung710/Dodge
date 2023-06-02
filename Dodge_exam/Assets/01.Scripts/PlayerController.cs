@@ -5,15 +5,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRigidbody;
     public float speed = 15f;
 
-    public float livecount = 5f;
+    public float livecount = 10f;
 
 
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
-
-               
-
+                     
     }
 
     //  플레이어 이동에 대한 코드
@@ -38,6 +36,11 @@ public class PlayerController : MonoBehaviour
 
             gameObject.SetActive(false);
 
+            GameManager gameManager = FindObjectOfType<GameManager>();
+
+            gameManager.EndGame();
+            
+
         }
 
 
@@ -50,18 +53,20 @@ public class PlayerController : MonoBehaviour
         gameObject.SetActive(false);
 
         // 씬에 존재하는 GameManager 타입의 오브젝트를 찾아서 가져오기
-        GameManager gameManager = FindObjectOfType<GameManager>();
-
+        //  GameManager gameManager = FindObjectOfType<GameManager>();
+        //  gameManager.DeadCount();
         // 가져온 GameManager 오브젝트의 EndGame() 메서드 실행
-        gameManager.EndGame();
-
+        //   gameManager.EndGame();
+      
+        GameManager.Instance.EndGame();
+       
 
     }
 
 
     public void Alive()
     {
-        livecount = 5f;
+        livecount = 10f;
 
     }
 

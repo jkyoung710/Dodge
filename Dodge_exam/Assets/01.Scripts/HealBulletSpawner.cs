@@ -12,7 +12,6 @@ public class HealBulletSpawner : MonoBehaviour
     private float timeAfterSpawn;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         timeAfterSpawn = 0f;
@@ -24,7 +23,6 @@ public class HealBulletSpawner : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         timeAfterSpawn += Time.deltaTime;

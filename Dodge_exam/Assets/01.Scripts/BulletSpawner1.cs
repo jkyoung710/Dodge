@@ -9,7 +9,6 @@ public class BulletSpawner1 : MonoBehaviour
     public float spawnRate = 2f;
     private float timeAfterSpawn;
 
-    // Start is called before the first frame update
     void Start()
     {
         timeAfterSpawn = 0f;
@@ -17,7 +16,6 @@ public class BulletSpawner1 : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         timeAfterSpawn += Time.deltaTime;

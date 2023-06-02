@@ -353,8 +353,14 @@
 "Assets/01.Scripts/GameManager.cs"
 "Assets/01.Scripts/HealBullet.cs"
 "Assets/01.Scripts/HealBulletSpawner.cs"
+"Assets/01.Scripts/Level1.cs"
+"Assets/01.Scripts/Level2.cs"
+"Assets/01.Scripts/Level3.cs"
+"Assets/01.Scripts/pageM.cs"
 "Assets/01.Scripts/PlayerController.cs"
 "Assets/01.Scripts/Rotator.cs"
+"Assets/01.Scripts/Windmill.cs"
+"Assets/01.Scripts/WindmillBullet.cs"
 -langversion:9.0
 
 /deterministic

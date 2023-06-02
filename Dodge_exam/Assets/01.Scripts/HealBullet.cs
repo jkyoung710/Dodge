@@ -7,7 +7,6 @@ public class HealBullet : MonoBehaviour
     private Rigidbody bulletRigidbody;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         bulletRigidbody = GetComponent<Rigidbody>();
